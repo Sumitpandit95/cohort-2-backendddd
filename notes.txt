@@ -1,0 +1,27 @@
+is day  me ham crud opreation padhenge or dekhenge ki kaise opreation preform karte hain with database 
+
+cluster - storage + processor
+database - we use the database and storng data 
+
+8sNEKll8UX91n8ry  dbms user  ye password hain 
+sumit ye user name hain 
+
+mongodb+srv://sumit:8sNEKll8UX91n8ry@cluster0.pxfdscl.mongodb.net/
+src ke andar config folder banate hain fir databse.js folder ke andar connect dbms ka code likhe haini 
+
+
+ye wale lacture me to nodes ham create to karenge but data sab databse ke andar store karenge 
+
+database me schema create karenge or fir 
+src me again ek alag folder create karte hain  folder k name hota hain models and model ke andar notes.model.js ke name se create  karte hain
+
+agar ham database mekuch perform karte hain to waha oeo jurat padti hain model ki or model create karte haain mogoose se 
+
+schema=> schema ka mainly matlab hota hain ki ham kis format me ham database ko  store karne wale hain mainly yahimatlabhota hain 
+
+Schema means a structure or a plan that defines how data should look. 
+
+model=> model ka matlab  ye hota hain ki ham koi bhi opreation perform karte hain aapne database me to kaise karte hain 
+
+Uses that structure to create, read, update, and delete data in MongoDB.
+

@@ -1,0 +1,31 @@
+/* ye file ka mainly kaam hai server ko create karna  */
+
+const express = require("express");
+const noteModel = require("./models/notes.model");
+
+const app = express();
+
+app.use(express.json());
+/*  let's create some api in post method  name will be /notes
+
+-post/notes
+-req.body=> {title,description}
+
+*/
+
+app.post("/notes", async (req, res) => {
+  const { title, description, age } = req.body;
+
+  const note = await noteModel.create({
+    title,
+    description,
+    age,
+  });
+
+  res.status(201).json({
+    messege: "note created sumit bhai",
+    note,
+  });
+});
+
+module.exports = app;
