@@ -1,0 +1,4 @@
+So,
+ what is express:- 
+
+ Express.js is a Node.js web framework used to build servers and REST APIs easily. It provides routing, middleware, and request-response handling.
