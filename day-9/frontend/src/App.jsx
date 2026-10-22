@@ -7,9 +7,11 @@ function App() {
   const [notes, setnotes] = useState([]);
 
   function fetchnotes() {
-    axios.get("http://localhost:3000/api/notes").then((res) => {
-      setnotes(res.data.notes);
-    });
+    axios
+      .get("https://cohort-2-backendddd-1.onrender.com//api/notes")
+      .then((res) => {
+        setnotes(res.data.notes);
+      });
   }
   useEffect(() => {
     fetchnotes();
@@ -22,7 +24,7 @@ function App() {
     console.log(title.value, description.value);
 
     axios
-      .post("http://localhost:3000/api/notes", {
+      .post("https://cohort-2-backendddd-1.onrender.com//api/notes", {
         title: title.value,
         description: description.value,
       })
@@ -33,10 +35,12 @@ function App() {
   }
 
   function handleDelete(noteId) {
-    axios.delete("http://localhost:3000/api/notes/" + noteId).then((res) => {
-      console.log(res.data);
-      fetchnotes();
-    });
+    axios
+      .delete("https://cohort-2-backendddd-1.onrender.com//api/notes/" + noteId)
+      .then((res) => {
+        console.log(res.data);
+        fetchnotes();
+      });
   }
   return (
     <>
