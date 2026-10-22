@@ -5,7 +5,7 @@ or database ko connect karna
  */
 
 const dns = require("node:dns");
-dns.setServers(["8.8.8.8", "1.1.1.1"]);
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 require("dotenv").config();
 const app = require("./src/app");

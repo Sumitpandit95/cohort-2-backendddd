@@ -25,3 +25,13 @@ model=> model ka matlab  ye hota hain ki ham koi bhi opreation perform karte hai
 
 Uses that structure to create, read, update, and delete data in MongoDB.
 
+
+
+
+
+
+//Github push command
+git init
+git add . (for complete folder ) if you want to send a single folder git add folder name(day-9)
+git commit -m 'hey'
+git push origin-main
